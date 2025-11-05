@@ -11,25 +11,27 @@
              revision="lineage-22.2" />
     <remote name="lineage-cp"
              fetch="https://github.com/LineageOS"
-             revision="lineage-23" />
+             revision="lineage-23.0" />
     <remote name="royna"
              fetch="https://github.com/Roynas-Android-Playground"
-             revision="lineage-23" />
+             revision="lineage-22.0" />
     <remote name="toolch"
              fetch="https://github.com/vijaymalav564"/>
              
-    <!-- Eureka -->
+    <!-- Pritam's (forked\)repos -->
     <project path="device/samsung"
-            name="android_device_samsung_exynos7885"
-            remote="eureka" />
+            name="device_samsung_exynos7885-common"
+            remote="pritam" />
+    <project path="vendor/samsung"
+            name="vendor_samsung_exynos7885-common"
+            remote="pritam" />
+            
+    <!-- Eureka -->
     <project path="kernel/samsung/exynos7885"
             name="kernel_samsung_exynos7885"
             remote="royna"
             revision="EurekaV2"
             recurse_submodules="true" />
-    <project path="vendor/samsung"
-            name="android_vendor_samsung_exynos7885"
-            remote="eureka" />
 
     <!-- LineageOS -->
     <project path="hardware/samsung_slsi/libbt"
@@ -74,7 +76,6 @@
     <!-- LLVM -->
     <project path="prebuilts/clang/host/linux-x86/clang-vortex"
              name="vortex-clang"
-             remote="vv"
+             remote="toolch"
              revision="master" />
-</manifest>
 </manifest>
