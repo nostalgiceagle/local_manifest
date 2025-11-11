@@ -1,83 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
+    <manifest>
     <remote name="eureka"
-             fetch="https://github.com/eurekadevelopment"
-             revision="android-15" />
+        fetch="https://github.com/eurekadevelopment"
+        revision="android-15" />
     <remote name="pritam"
-             fetch="https://github.com/nostalgiceagle" />
-	<remote name="eureka-slsi-linaro"
-             fetch="https://github.com/eurekadevelopment"
-             revision="lineage-22.2" />
+        fetch="https://github.com/nostalgiceagle" />
+    <remote name="eureka-slsi-linaro"
+       fetch="https://github.com/eurekadevelopment"
+       revision="lineage-22.2" />
     <remote name="lineage-cp"
-             fetch="https://github.com/LineageOS"
-             revision="lineage-23.0" />
+        fetch="https://github.com/LineageOS"
+        revision="lineage-23.0" />
     <remote name="royna"
-             fetch="https://github.com/Roynas-Android-Playground"
-             revision="lineage-22" />
-    <remote name="toolch"
-             fetch="https://github.com/vijaymalav564"/>
-             
+        fetch="https://github.com/Roynas-Android-Playground"
+        revision="lineage-22" />
+        
     <!-- Pritam's (forked\)repos -->
-    <project path="device/samsung"
-            name="device_samsung_exynos7885-common"
-            revision="sixteen"
-            remote="pritam" />
-    <project path="vendor/samsung"
-            name="vendor_samsung_exynos7885-common"
-            revision="sixteen"
-            remote="pritam" />
+    <project path="device/samsung/exynos7885-common"
+        name="device_samsung_exynos7885-common"
+        revision="sixteen"
+        remote="pritam" />
+    <project path="device/samsung/a10"
+        name="device_samsung_a10"
+        revision="sixteen"
+        remote="pritam" />
     <project path="device/samsung_slsi/sepolicy"
-            name="android_device_samsung_slsi_sepolicy"
-            revision="sixteen"
-            remote="pritam" />
+        name="android_device_samsung_slsi_sepolicy"
+        revision="lineage-23.0"
+        remote="pritam" />
     <project path="hardware/samsung"
-            name="android_hardware_samsung"
-            remote="pritam"
-            revision="lineage-23.0" />
-            
+        name="android_hardware_samsung"
+        remote="pritam"
+        revision="lineage-23.0" />
+    <project path="vendor/samsung/a10"
+        name="vendor_samsung_exynos_a10"
+        revision="sixteen"
+        remote="pritam" />
+        
     <!-- Eureka -->
     <project path="kernel/samsung/exynos7885"
-            name="kernel_samsung_exynos7885"
-            remote="royna"
-            revision="EurekaV2"
-            recurse_submodules="true" />
-
+        name="kernel_samsung_exynos7885"
+        remote="royna"
+        revision="EurekaV2"
+        recurse_submodules="true" />
+    
     <!-- LineageOS -->
     <project path="hardware/samsung_slsi/libbt"
-            name="android_hardware_samsung_slsi_libbt"
-            remote="lineage-cp" />
+        name="android_hardware_samsung_slsi_libbt"
+        remote="lineage-cp" />
     <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal"
-            name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal"
-            remote="lineage-cp" />
+        name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal"
+        remote="lineage-cp" />
     <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib"
-            name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib"
-            remote="lineage-cp" />
-
-    <!-- Royna's repos -->
-    <project path="hardware/samsung-ext/interfaces"
-            name="hardware_samsung-extra_interfaces"
-            remote="royna" />
-
+        name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib"
+        remote="lineage-cp" />
+    
     <!-- SLSI Linaro -->
-	<project path="hardware/samsung_slsi-linaro/graphics"
-             name="android_hardware_samsung_slsi-linaro_graphics"
-             remote="eureka-slsi-linaro" />
-	<project path="hardware/samsung_slsi-linaro/interfaces"
-             name="android_hardware_samsung_slsi-linaro_interfaces"
-             remote="eureka-slsi-linaro" />
+    <project path="hardware/samsung_slsi-linaro/graphics"
+        name="android_hardware_samsung_slsi-linaro_graphics"
+        revision="lineage-23.0"
+        remote="pritam" />
+    <project path="hardware/samsung_slsi-linaro/interfaces"
+        name="android_hardware_samsung_slsi-linaro_interfaces"
+        revision="lineage-23.0"
+        remote="lineage-cp" />
     <project path="hardware/samsung_slsi-linaro/exynos"
-             name="android_hardware_samsung_slsi-linaro_exynos"
-             remote="eureka-slsi-linaro" />
+        name="android_hardware_samsung_slsi-linaro_exynos"
+        revision="lineage-23.0"
+        remote="pritam" />
     <project path="hardware/samsung_slsi-linaro/config"
-             name="android_hardware_samsung_slsi-linaro_config"
-             remote="eureka-slsi-linaro" />
+        name="android_hardware_samsung_slsi-linaro_config"
+        revision="lineage-23.0"
+        remote="pritam" />
     <project path="hardware/samsung_slsi-linaro/openmax"
-             name="android_hardware_samsung_slsi-linaro_openmax"
-             remote="eureka-slsi-linaro" />
-             
-    <!-- LLVM -->
-    <project path="prebuilts/clang/host/linux-x86/clang-vortex"
-             name="vortex-clang"
-             remote="toolch"
-             revision="master" />
+        name="android_hardware_samsung_slsi-linaro_openmax"
+        revision="lineage-23.0"
+        remote="lineage-cp" />
 </manifest>
