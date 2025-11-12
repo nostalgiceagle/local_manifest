@@ -32,10 +32,14 @@
         name="android_hardware_samsung"
         remote="pritam"
         revision="lineage-23.0" />
-    <project path="vendor/samsung/a10"
-        name="vendor_samsung_exynos_a10"
+    <project path="vendor/samsung/exynos7885-common"
+        name="vendor_samsung_exynos7885-common"
         revision="sixteen"
         remote="pritam" />
+    <project path="vendor/samsung/a10"
+        name="vendor_samsung_a10"
+        revision="fifteen"
+        remote="royna" />
         
     <!-- Eureka -->
     <project path="kernel/samsung/exynos7885"
@@ -68,12 +72,17 @@
         name="android_hardware_samsung_slsi-linaro_exynos"
         revision="lineage-23.0"
         remote="pritam" />
+    <project path="hardware/samsung_slsi-linaro/exynos5"
+        name="android_hardware_samsung_slsi-linaro_exynos5"
+        revision="lineage-23.0"
+        remote="lineage-cp" />
     <project path="hardware/samsung_slsi-linaro/config"
         name="android_hardware_samsung_slsi-linaro_config"
         revision="lineage-23.0"
         remote="pritam" />
     <project path="hardware/samsung_slsi-linaro/openmax"
         name="android_hardware_samsung_slsi-linaro_openmax"
-        revision="lineage-23.0"
+        revision="lineage-22.2"
         remote="lineage-cp" />
+        
 </manifest>
